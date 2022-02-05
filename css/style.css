@@ -43,3 +43,14 @@
     outline-style: none;
     margin-bottom: 10px;
 }
+#submit{
+    color: white;
+    background: green;
+    outline-style: none;
+    margin-bottom: 10px;
+}
+#submit:hover {
+    background: white;
+    color: #4286f4;
+    border: 1px solid #4286f4;
+}
