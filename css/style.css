@@ -12,4 +12,26 @@
 
 .container h1{
     padding-top: 10px;
+    justify-content: center;
+}
+.studentname{
+    width: 50%;
+    margin-left: 250px;
+}
+#no-name {
+    display: none;
+    margin-top: 2%;
+}
+#no-name span {
+    color: #4286f4;
+}
+#start-btn {
+    color: white;
+    background: green;
+    outline-style: none;
+    margin-bottom: 10px;
+
+}
+#page1{
+    background-color: greenyellow;
 }
