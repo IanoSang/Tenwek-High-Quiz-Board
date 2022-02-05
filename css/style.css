@@ -30,8 +30,10 @@
     background: green;
     outline-style: none;
     margin-bottom: 10px;
-
 }
 #page1{
-    background-color: greenyellow;
+    padding: 40px;
+}
+#page2{
+    padding: 40px;
 }
