@@ -36,12 +36,14 @@
 }
 #page2{
     padding: 40px;
+
 }
 #next-btn{
     color: white;
     background: green;
     outline-style: none;
     margin-bottom: 10px;
+
 }
 #submit{
     color: white;
@@ -53,4 +55,8 @@
     background: white;
     color: #4286f4;
     border: 1px solid #4286f4;
+}
+.choices {
+    position: relative;
+    left: 5%;
 }
