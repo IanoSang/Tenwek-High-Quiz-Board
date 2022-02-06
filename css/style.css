@@ -60,3 +60,6 @@
     position: relative;
     left: 5%;
 }
+#page1, #page2{
+    display: none;
+}
