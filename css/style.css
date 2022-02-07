@@ -1,65 +1,151 @@
 *{
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
-
+    box-sizing: border-box;
 }
-
-.container{
-    justify-content: center;
-    background-color: oldlace;
+body {
+    line-height: 1.1em;
+    letter-spacing: 2px;
+    background-image: url("../images/jsbg.webp");
+    background-size: cover;
+    font-size: 1.1em;
 }
-
-.container h1{
+h1 {
     padding-top: 10px;
-    justify-content: center;
+    color: orange;
 }
-.student-name{
-    width: 50%;
-    margin-left: 250px;
+form h4 {
+    text-align: left;
+}
+.container {
+    text-align: center;
+}
+
+form {
+    padding: 30px;
+    padding-bottom: 15px;
+    width: 60%;
+    border-radius: 10px;
+    background:#ECF0F1;
+    margin: 2% auto;
+    position: relative;
+}
+/*#student-details{*/
+/*    background: navajowhite;*/
+/*}*/
+.form-group {
+    text-align: left;
 }
 #no-name {
     display: none;
     margin-top: 2%;
 }
 #no-name span {
-    color: #4286f4;
+    color: red;
 }
-#start-btn {
+#start-btn, #submit {
     color: white;
     background: green;
     outline-style: none;
-    margin-bottom: 10px;
 }
-#page1{
-    padding: 40px;
-}
-#page2{
-    padding: 40px;
-
-}
-#next-btn{
+#retake{
     color: white;
-    background: green;
+    background: yellow;
     outline-style: none;
-    margin-bottom: 10px;
-
 }
-#submit{
-    color: white;
-    background: green;
-    outline-style: none;
-    margin-bottom: 10px;
-}
+#start-btn:hover,
+#retake:hover,
 #submit:hover {
     background: white;
-    color: #4286f4;
-    border: 1px solid #4286f4;
+    color: green;
+    border: 1px solid green;
 }
-.choices {
+.inputs {
     position: relative;
-    left: 5%;
+    left: 2%;
 }
-#page1, #page2{
+input[type=radio] {
     display: none;
+}
+.arrow:hover {
+    font-size: 18px;
+    cursor: pointer;
+    color: green;
+}
+
+.circle {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    background: inherit;
+    border: 1px solid green;
+    top: 0;
+    bottom: 0;
+    border-radius: 50%;
+}
+.circle:hover {
+    background: green;
+}
+input[type=radio]:checked + .circle {
+    background: green;;
+}
+.arrow {
+    text-align: right;
+    padding-right: 50px;
+    display: inline-block;
+}
+#fa-arrow-right {
+    position: absolute;
+    right: 10%;
+    bottom: 5%;
+}
+#arrow-left {
+    text-align: left;
+    position: absolute;
+    left: 10%;
+    bottom: 4%;
+}
+#page2,#page1 {
+    display: none;
+}
+label {
+    margin-left: 10px;
+    letter-spacing: 2px;
+}
+#score {
+    display: none;
+}
+.name-display {
+    font-size: 27px;
+}
+.scoreDisplay {
+    font-size: 25px;
+    font-family: "Nimbus Roman";
+}
+.enter-name {
+    border: 1px solid red;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 486px) {
+    .form-group {
+        line-height: 20px;
+    }
+    p {
+        line-height: 20px;
+    }
+    .fa-arrow-right {
+        position: absolute;
+        right: 10%;
+        bottom: 3%;
+    }
+    #arrow-left {
+        text-align: left;
+        position: absolute;
+        left: 10%;
+        bottom: 2.5%;
+    }
+    .name-display {
+        line-height: 1.2em;
+    }
 }
