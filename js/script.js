@@ -1,4 +1,4 @@
-
+//Mark Calculation
 var sum = 0;
 function scoreCalculator(userValue) {
     var names = ["js","year","framework","known","type","function","dom","link","programming","element"];
