@@ -40,13 +40,21 @@ $(function() {
         scoreCalculator();
         var userFirstName = $("#firstName").val();
         var userSecondName = $("#secondName").val();
-        if(sum <= 30) {
-            $(".name-display").text(`Nice try ${userFirstName} ${userSecondName},`);
+
+        $(".scoreDisplay").text(sum + "%/100%");
+        if(sum < 50) {
+            $(".name-display").text(`Dear ${userFirstName} ${userSecondName},
+            You have scored poorly, Please Retake the Test`);
+        }
+        else if(sum >=50 && sum <80) {
+            $(".name-display").text(`${userFirstName} ${userSecondName},
+            You have Fairly Passed.`);
         }
         else {
-            $(".name-display").text(`Congratulations ${userFirstName} ${userSecondName},`);
+            $(".name-display").text(`Congratulations ${userFirstName} ${userSecondName},
+            You have excellently passed`);
         }
-        $(".scoreDisplay").text(sum + "%/100%");
+
     })
     $("#retake").click(function(event) {
         event.preventDefault();
