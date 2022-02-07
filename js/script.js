@@ -1,4 +1,4 @@
-// BUSINESS LOGIC
+
 var sum = 0;
 function scoreCalculator(userValue) {
     var names = ["js","year","framework","known","type","function","dom","link","programming","element"];
@@ -11,7 +11,6 @@ function scoreCalculator(userValue) {
 }
 
 
-// USER INTERFACE LOGIC
 $(function() {
     $("#start-btn").click(function(event) {
         event.preventDefault();
